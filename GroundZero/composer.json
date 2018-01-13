@@ -1,0 +1,12 @@
+{
+    "name": "wampin/ground-zero",
+    "description": "Working directory for the Ground Zero DBMS",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Matt Markwald",
+            "email": "mmarkwald01@gmail.com"
+        }
+    ],
+    "require": {}
+}

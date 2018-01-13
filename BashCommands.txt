@@ -1,0 +1,4 @@
+USEFUL SCRIPTS:
+which -a script_name	check if scriptname is used
+whereis script_name 	find script
+locate script_name  	find script

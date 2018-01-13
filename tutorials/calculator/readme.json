@@ -1,0 +1,12 @@
+{
+	"name":"Composer, Autoloading, Namespacing, and PHPUnit!",
+	"source":"youtube - Tuts+ Code",
+	"author":"Matt Markwald",
+	"date":"10.29.17",
+	"description":[
+		"Tutorial explains how to use composer to autoload classes",
+		"not just for the app but for phpunit as well"
+	]
+}
+
+

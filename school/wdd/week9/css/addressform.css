@@ -1,0 +1,49 @@
+/*Style page for Week9 specifically targeting the class AddressForm*/
+body {
+	background-color: #a4a4a4;
+}
+.AddressForm {
+	background-color: white;
+	margin: 0 auto;
+	width: 40%;
+	font-size: 16pt;
+	box-shadow: 5px 5px 2.5px rgb(95,95,95);
+}
+
+.AddressForm form {
+	width: 98%;
+	margin: 0 auto;
+} 
+
+.AddressForm > form label {
+	font-size: .75em;
+}
+
+.AddressForm > form input[type=text],select,label {
+	width: 98%;
+	border: hidden;
+	color: rgb(115,115,115);
+	padding-top: 3.5px;
+	padding-bottom: 3.5px;
+	font-size: .85em;
+}
+
+.AddressForm > form input[type=text] {
+	border: solid 1px #a4a4a4;
+}
+
+.AddressForm > form input[type=submit] {
+	width: unset;
+	margin-left: .25%;
+	background-color: #4286f4;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 5px;
+	font-size: .85em;
+}
+
+.AddressForm > h3 {
+	background-color:#4286f4;
+	color: white;
+	text-align: center;
+}

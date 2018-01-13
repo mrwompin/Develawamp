@@ -1,0 +1,44 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Registration_Error	registration.php	/^$Registration_Error = []; \/\/ holds error messages$/;"	v
+address	registration.php	/^		$address = mysqli_real_escape_string($con,$address);$/;"	v
+address	registration.php	/^	$address = stripslashes($_REQUEST['address']);$/;"	v
+city	registration.php	/^		$city = mysqli_real_escape_string($con,$city);$/;"	v
+city	registration.php	/^	$city = stripslashes($_REQUEST['city']);$/;"	v
+con	con.php	/^$con = new mysqli("localhost","root","welcome","register");$/;"	v
+con	db.php	/^$con = new mysqli("localhost","root","welcome","register");$/;"	v
+email	registration.php	/^		$email = mysqli_real_escape_string($con,$email);$/;"	v
+email	registration.php	/^	$email = stripslashes($_REQUEST['email']);$/;"	v
+error	registration.php	/^			$error = 1;	$/;"	v
+error	registration.php	/^		$error = 1;$/;"	v
+error	registration.php	/^$error = 0; \/\/ boolean for error handling$/;"	v
+fname	registration.php	/^		$fname = mysqli_real_escape_string($con,$fname);$/;"	v
+fname	registration.php	/^	$fname = stripslashes($_REQUEST['fname']);$/;"	v
+lname	registration.php	/^		$lname = mysqli_real_escape_string($con,$lname);$/;"	v
+lname	registration.php	/^	$lname = stripslashes($_REQUEST['lname']);$/;"	v
+message	login.php	/^	$message = "";$/;"	v
+password	login.php	/^	$password = mysqli_real_escape_string($con,$_REQUEST['password']);$/;"	v
+password	login.php	/^	$password = stripslashes($_REQUEST['password']);$/;"	v
+password	registration.php	/^		$password = mysqli_real_escape_string($con,$password);$/;"	v
+password	registration.php	/^	$password = stripslashes($_REQUEST['password']);$/;"	v
+phone	registration.php	/^		$phone = mysqli_real_escape_string($con,$phone);$/;"	v
+phone	registration.php	/^	$phone = stripslashes($_REQUEST['phone']);$/;"	v
+query	login.php	/^	$query = "select * from users where username='$username' and password = '$password'";$/;"	v
+query	registration.php	/^	$query = "select * from users where username='$username'";$/;"	v
+result	login.php	/^	$result = mysqli_query($con, $query) or die(mysql_error());$/;"	v
+result	registration.php	/^	$result = mysqli_query($con, $query) or die(mysqli_error());$/;"	v
+rows	login.php	/^	$rows = mysqli_num_rows($result);$/;"	v
+rows	registration.php	/^	$rows = mysqli_num_rows($result);$/;"	v
+state	registration.php	/^		$state = mysqli_real_escape_string($con,$state);$/;"	v
+state	registration.php	/^	$state = stripslashes($_REQUEST['state']);$/;"	v
+stmt	registration.php	/^		$stmt = $con->prepare('insert into users(username, password,email,fname,lname, address, city, state, zip,phone)$/;"	v
+username	login.php	/^	$username = mysqli_real_escape_string($con, $username);$/;"	v
+username	login.php	/^	$username = stripslashes($_REQUEST['username']);$/;"	v
+username	registration.php	/^		$username = mysqli_real_escape_string($con,$username);$/;"	v
+username	registration.php	/^	$username = stripslashes($_REQUEST['username']);$/;"	v
+zip	registration.php	/^		$zip = mysqli_real_escape_string($con,$zip);$/;"	v
+zip	registration.php	/^	$zip = stripslashes($_REQUEST['zip']);$/;"	v

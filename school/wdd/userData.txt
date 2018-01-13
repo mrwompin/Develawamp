@@ -1,0 +1,7 @@
+	boss	Michael	Scott	michael@dundermifflin.com	b3stboss	123 My Street	Scranton	PA	12545	555-555-5555	\n
+	happy	Pam	Beesley	pam@dundermifflin.com	r3c3ption	123 My Street	Scranton	PA	12545	555-555-5555	\n
+	hatedwight	Jim	Halpert	jim@dundermifflin.com	s4l3s	123 My Street	Scranton	PA	12545	555-555-5555	\n
+	lovemichael	Dwight	Schrute	dwight@dundermifflin.com	m4n4g3r	123 My Street	Scranton	PA	12545	555-555-5555	\n
+	mmouse	Issac	Brock	issac@modestmouse.com	fl04t0n	123 My Street	Seattle	WA	12545	555-555-5555	\n
+	3libras	Maynard	Keenan	maynard@tool.com	cr4wl4w4y	123 My Street	Carefree	AZ	12545	555-555-5555	\n
+	magdelena	Billy	Howerdel	billy@apc.com	m4gd4l3n4	123 My Street	Trenton	NJ	12545	555-555-5555	\n

@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="/home/Wampin/node_modules/github-markdown-css/github-markdown.css" type="text/css" />
+</head>
+<body>
+<article class="markdown-body">
+<h2 id="calendar-column">Calendar Column</h2>
+<p>The calendar column is an extension of the DatagridViewColumn that utilyzes three classes inheritting from the DatagridViewColumn, DataGridviewTextboxCell, and the DateTimePicker as well as incorporating the IDataGridViewEditingControl interface as a means of embedding the DateTimePicker class in the form of the CalendarEditingControl.</p>
+<h4 id="the-calendar-column">The Calendar Column</h4>
+<h5 id="the-constructor">The Constructor</h5>
+<div class="figure">
+<img src="img/CalendarColumn.png" alt="Calendar Column" />
+<p class="caption">Calendar Column</p>
+</div>
+<p>The CalendarColumn class inherits from the DatagridViewColumn. This control will ultimately be available under the DatagridView control using the add a column feature. The class can also be hard coded in later. The public CalendarColumn is the entry point for the class, the colon base(new CalendarCcell()) runs the base class constructor (DatagridViewColumn) and then adds the CalendarCell() class as the cell template (we will build the CalendarCell later).</p>
+<h5 id="celltemplate-override">CellTemplate Override</h5>
+<div class="figure">
+<img src="img/CellTemplate.png" alt="Calendar Column CellTemplate Overide" />
+<p class="caption">Calendar Column CellTemplate Overide</p>
+</div>
+<p>Overides the CellTemplate property on the DatagridViewColumn. Causes any other CellTemplate setting other than the CalendarCell to throw an error.</p>
+<h4 id="the-calendar-cell">The Calendar Cell</h4>
+<h5 id="the-constructor-1">The Constructor</h5>
+<div class="figure">
+<img src="img/CalendarCell.png" alt="Calendar Cell" />
+<p class="caption">Calendar Cell</p>
+</div>
+<p>The CalendarCell class inherits from the DatagridViewTextrBoxCell. Like the CalendarColumn, the CalendarCell constructor calls the base constructor as well. Then the Format for the custom cell is set to short date.</p>
+<h4 id="initializeeditingcontrol-override">InitializeEditingControl Override</h4>
+<div class="figure">
+<img src="img/InitializeEditingControl.png" alt="Initialize Editing Control" />
+<p class="caption">Initialize Editing Control</p>
+</div>
+<p>When editing is initiated cell information is sent to the editing control. If the cell value is null, the CalendarEditingControl default value is set to today.</p>
+<h4 id="additional-properties">Additional Properties</h4>
+<div class="figure">
+<img src="img/AdditionalProperties.png" alt="Additional Properties" />
+<p class="caption">Additional Properties</p>
+</div>
+<p>These properites override basic information about the class.</p>
+<h4 id="the-calendareditingcontrol">The CalendarEditingControl</h4>
+<p>Will be called when the user starts to edit a cell in a calendar column. Inherits from the DateTimePicker and uses the IDatagridViewEditingControl inorder to apply DateTimePicker edits to the cell.</p>
+<h5 id="properties">Properties</h5>
+<div class="figure">
+<img src="img/CalendarEditingControlProperties.png" alt="Calendar Editing Control Properties" />
+<p class="caption">Calendar Editing Control Properties</p>
+</div>
+<p>Properties needed for class</p>
+<h4 id="the-constructor-2">The Constructor</h4>
+<div class="figure">
+<img src="img/CalendarEditingControlConstructor.png" alt="Calendar Editing Control Constructor" />
+<p class="caption">Calendar Editing Control Constructor</p>
+</div>
+<p>Sets the editing format to Short Date</p>
+<h4 id="interface-implemenatons">Interface Implemenatons</h4>
+<p>The following sections of code are the required implementations for the IDatagridViewEditingControl. These are the parts of the code that need to be defined so that when the DatagridView that parents our CalendarColumn is able to apply the user's edits.</p>
+<h5 id="editing-control-formatted-value">Editing Control Formatted Value</h5>
+<div class="figure">
+<img src="img/EditingControlFormattedValue.png" alt="Editing Control Formatted Value" />
+<p class="caption">Editing Control Formatted Value</p>
+</div>
+<p>Handles getting and setting the value of the Editing Control, returns the value as a short date, as well as attempts to store it as a short date. If the value cannot be stored as a short date, the value is set to todays date. GetEditingControlFormattedValue handles retrieving the formatted value, and also has it's own set of error handling.</p>
+<h5 id="apply-cell-styling-to-editing-control">Apply Cell Styling to Editing Control</h5>
+<div class="figure">
+<img src="img/EditingControlFormattedValue.png" alt="Apply Cell Styling to Editing Control" />
+<p class="caption">Apply Cell Styling to Editing Control</p>
+</div>
+<p>Sets the look of the CalendarEditingControl to match the parent DatagridView</p>
+<h5 id="editing-control-row-index">Editing Control Row Index</h5>
+<div class="figure">
+<img src="img/EditingControlRowIndex.png" alt="Editing Control Row Index" />
+<p class="caption">Editing Control Row Index</p>
+</div>
+<p>Property to store the cell index that is being editted.</p>
+<h5 id="editing-control-wants-input-key">Editing Control Wants Input Key</h5>
+<div class="figure">
+<img src="img/EditingControlWantsInputKey.png" alt="Editing Control Wants Input Key" />
+<p class="caption">Editing Control Wants Input Key</p>
+</div>
+<p>Defines how to handle the editing control needing a key input.</p>
+<h5 id="prepare-editing-control-for-edit">Prepare Editing Control for Edit</h5>
+<p>No preparation is needed prior to edit</p>
+<h5 id="misc.-implemenations">Misc. Implemenations</h5>
+<div class="figure">
+<img src="img/PrepareEditingControlForEdit.png" alt="Prepare Editing Control for Edit" />
+<p class="caption">Prepare Editing Control for Edit</p>
+</div>
+<div class="figure">
+<img src="img/RepositionEditingControlOnValueChange.png" alt="Repositon Editing Control on Value Change" />
+<p class="caption">Repositon Editing Control on Value Change</p>
+</div>
+<p>PrepareEditingControlforEdit does not need set as there is no preparation needed before editing can begin. RepositionEditingControlOnValueChange is set to return false so the control won't reposition when the value changes. We have the EditingControlDatagridView set to return our class' dataGridView property. EditingControlValueChanged boolean is set to return to return the our class' valueChanged boolean. Finally the EditingPanelCursor is set to return the default DateTimePicker cursor.</p>
+<h5 id="on-value-changed">On Value Changed</h5>
+<div class="figure">
+<img src="img/OnValueChanged.png" alt="On Value Changed" />
+<p class="caption">On Value Changed</p>
+</div>
+<p>The last bit of code we need is an override for our base class void, OnValueChanged. This handles when the value changes by setting our valueChanged boolean to true, then notify the parent DatagridView, before calling the base OnValueChanged sending the eventargs.</p>
+<h2 id="demo">Demo</h2>
+<p>Go to form1 constructor and add the following code.</p>
+<div class="figure">
+<img src="img/demo.png" alt="Demo" />
+<p class="caption">Demo</p>
+</div>
+<p>Run the program. Notice what happens when you click on the Vacation Start and Vacation End cells.</p>
+</article>
+</body>
+</html>

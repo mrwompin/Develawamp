@@ -1,0 +1,57 @@
+Learn VIM the Hard Way
+Last Chapter: learnvimscriptthehardway.stevelosh.com/chapters/09.html 
+some sample text for testing
+some sample text for testing
+some sample text for testing
+							some sample text for "testing"
+some sample text for "testing"
+some sample text for "testing"
+some sample text "for" testing
+some sample text for "testing"
+some "sample" text for "testing"
+some sample "text" for testing
+some sample text for testing
+some sample "text" "for" testing
+some sample text "for" testing
+some sample "text" "for" testing
+some sample "text" "for" "testing"
+some sample text for "testing"
+some sample text for "testing"
+some sample text for testing
+some sample text for testing
+some sample text for testing
+some sample text for testing
+some sample text for testing
+some sample text for testing
+some sample text for testing
+"some" "sample" "text" for testing
+some sample text for testing
+"some" sample text for testing
+some "sample" text for testing
+some sample "text" for testing
+some sample text for testing
+my very eager mother just served us nine pickles 
+some sample text for testing
+some sample text for testing
+some sample text for testing
+some sample text for testing
+some sample text for testing
+some sample "text" for testing
+some sample text for testing
+some sample "text" for "testing"
+
+mmarkwald01@gmail.com 
+vim awk man aptitude
+
+-- 
+steve@stevelosh.com-- 
+Steve Losh
+steve@stevelosh.com :iunmap -- Steve Losh 
+-- 
+Matt "Markwald"
+	nnoremap <leader><tab> 0i<tab><es
+									mmarkwald01@gmail.com -- 
+							Matt Markwald
+										mmarkwald01@gmail.com
+
+ 
